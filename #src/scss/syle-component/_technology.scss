@@ -1,0 +1,160 @@
+.technology {
+}
+
+.technology-wrap {
+	padding: 30px 0 60px 0;
+}
+.technology-row {
+	display: grid;
+	grid-template-columns: 1fr 0.53fr;
+	grid-gap: 40px;
+}
+
+.technology-column {
+}
+
+.technology-title {
+	margin-bottom: 32px;
+}
+
+.technology-text {
+	& > p {
+		max-width: 700px;
+	}
+
+	& p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+		& span {
+			color: #484d97;
+		}
+	}
+
+	& ul {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		& li {
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.technology-text-row {
+	display: grid;
+	grid-template-columns: 1fr 0.78fr;
+	grid-gap: 30px;
+	margin-top: 30px;
+}
+
+.technology-text-column {
+	&:first-child {
+		display: flex;
+	}
+	& iframe {
+		width: 100%;
+		max-height: 400px;
+		height: 100%;
+		border-radius: 10px;
+		min-height: 230px;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+.list-check {
+}
+
+.technology-text-item {
+	display: flex;
+	align-items: center;
+	& p {
+		margin-bottom: 0;
+	}
+}
+
+.technology-text-image {
+	margin-right: 15px;
+	& img {
+		width: 100%;
+		min-width: 130px;
+		height: 90px;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+}
+
+.technology-card {
+	padding: 20px 40px 40px 35px;
+	background: #f8f8fa;
+	border-radius: 10px;
+}
+
+.card-technology {
+}
+
+.card-technology-name {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 140%;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.card-technology-name-icon {
+	display: block;
+	margin-right: 15px;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: url("../img/icon-question.svg") no-repeat center, #eeeffa;
+}
+
+.card-technology-text {
+	& ul {
+		& li {
+			margin-bottom: 27px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.technology-row {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.technology-text-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 900px) {
+	.technology-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.technology-wrap {
+		padding: 20px 0;
+	}
+
+	.technology-title {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	.technology-card {
+		padding: 20px;
+	}
+}

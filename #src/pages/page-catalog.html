@@ -1,0 +1,59 @@
+@@include("../components/_header.html")
+
+<main class="main main-img">
+    <div class="mobile-header">
+        <div class="container">
+            <div class="mobile-header-wrap">
+                <div class="mobile-header-logo"><a href="#"><img src="./img/logo-footer.svg" alt=""></a></div>
+
+                <div class="mobile-header-group-tel">
+                    <a href="tel:+74992132016" class="tel animate-link"><span>7 (499) 213-20-16</span></a>
+                    <a href="mailto:geopack@geopack.ru" class="email animate-link"><span>geopack@geopack.ru</span></a>
+                </div>
+
+                <svg class="mobile-header-burger ham hamRotate ham8 js-ham" viewBox="0 0 100 100" height="50"
+                    width="50">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom"
+                        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <section class="company-info grid-main">
+
+        <div class="container">
+            <div class="company-info-container">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs-wrap">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumbs-item"><span>Каталог продукции</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company-info-title title-h2">Каталог продукции</div>
+            </div>
+        </div>
+    </section>
+
+    @@include("../components/_catalog.html")
+
+    @@include("../components/_technology.html")
+
+    @@include("../components/_cardboard.html")
+
+    @@include("../components/_news.html")
+
+    @@include("../components/_seo-text.html", {
+    "className": "--small-padding"
+    })
+
+    <div class="bg-overlay"></div>
+</main>
+
+@@include("../components/_footer.html")

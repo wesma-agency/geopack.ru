@@ -1,0 +1,127 @@
+.footer {
+	margin-left: 300px;
+	padding: 40px 0 40px 0;
+	background: #f7f7f9;
+
+	& a {
+		color: #484d97;
+	}
+
+	& .footer-1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		border-bottom: 1px solid rgba(34, 34, 34, 0.07);
+		padding-bottom: 23px;
+		& .footer-logo {
+			flex-grow: 1;
+			flex-shrink: 0;
+			flex-basis: 230px;
+			padding: 0 15px 0 0;
+			margin-bottom: 15px;
+		}
+
+		& .footer-tel {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 200px;
+			flex-shrink: 0;
+			flex-grow: 1;
+			font-size: 18px;
+			line-height: 1.4;
+			font-weight: 600;
+			text-decoration: none;
+			padding: 0 15px 0 0;
+			margin-bottom: 15px;
+		}
+		& .email {
+			flex-basis: 200px;
+			flex-shrink: 0;
+			flex-grow: 1;
+			padding: 0 15px 0 0;
+			margin-bottom: 15px;
+		}
+		& .footer-lacation {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 300px;
+			flex-shrink: 0;
+			flex-grow: 1;
+			padding: 0 15px 0 0;
+			margin-bottom: 15px;
+		}
+
+		& .btn.callback {
+			// border: 1px solid rgba(72, 77, 151, 0.15);
+			border-radius: 4px;
+			padding: 20px 40px;
+			margin-bottom: 15px;
+			transition: all 0.3s ease;
+			min-height: 60px;
+			font-weight: 600;
+			flex-shrink: 0;
+			flex-grow: 0;
+
+			background: #484d97;
+			color: #fff;
+			border: 1px solid rgba(72, 77, 151, 0.15);
+		}
+	}
+
+	& .footer-2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 30px 0 0 0;
+		& .production-location {
+			display: flex;
+			flex-direction: row;
+			& .production-footer {
+				padding: 0 20px 0 0;
+				margin-bottom: 15px;
+			}
+			& .location {
+				padding: 0 15px 0 0;
+				margin-bottom: 15px;
+			}
+		}
+		& .development-wesma {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			& .development {
+				padding: 0 15px 0 0;
+				margin-bottom: 15px;
+			}
+			& .wesma {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.footer {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		padding: 20px 0;
+	}
+
+	.footer .footer-1 {
+		padding-bottom: 5px;
+	}
+}
+
+@media (max-width: 500px) {
+	.footer .footer-2 .production-location {
+		flex-direction: column;
+	}
+}

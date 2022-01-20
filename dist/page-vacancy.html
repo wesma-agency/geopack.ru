@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/lightgallery.min.css">
+  <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/nice-select.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="wrapper grid-16">
+
+    <!-- HEADER -->
+
+    <header class="header grid-header-aside bg-white">
+      <div class="header-close-menu"></div>
+      <div class="header__wrap">
+        <div class="logo-container">
+          <div class="logo-header">
+            <a href="#"><img src="./img/logo.svg" alt="ГеоПак"></a>
+          </div>
+        </div>
+        <div class="header-container flex-column">
+          <span class="grey-text hot-line fs-12">
+            Горячая линия
+          </span>
+          <a href="tel:+74992132016" class="tel animate-link"><span>7 (499) 213-20-16</span></a>
+          <a href="mailto:geopack@geopack.ru" class="email animate-link --back"><span>geopack@geopack.ru</span></a>
+          <span class="grey-text fs-12">
+            Мы находимся
+          </span>
+          <span class="black-text">
+            г. Красноармейск, Муромцевское шоссе д. 1, стр. 3
+          </span>
+          <a href="#" class="link animate-link --back"><span>мы на карте</span></a>
+          <div class="main-menu">
+            <ul class="menu-list grey-text">
+              <li class="menu-item">
+                <a class="menu-link current" href="#">
+                  <svg class="menu-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12.7334 2.16634C15.4139 2.16634 17.5995 4.3361 17.6287 7.01304L17.8661 7.01414C20.8583 7.01414 23.2914 9.44623 23.2914 12.4362V18.4119C23.2914 21.4008 20.8583 23.8329 17.8661 23.8329H7.59178C4.60069 23.8329 2.16644 21.4008 2.16644 18.4119V12.4362C2.16644 9.44623 4.60069 7.01414 7.59178 7.01414L7.81278 7.01317L7.81965 6.80248C7.88768 5.57349 8.39384 4.44603 9.26238 3.58659C10.1919 2.66467 11.4399 2.20425 12.7334 2.16634ZM17.8661 8.63914L17.6289 8.63817L17.629 10.352C17.629 10.8005 17.265 11.1645 16.8165 11.1645C16.368 11.1645 16.004 10.8005 16.004 10.352L16.0039 8.63817H9.43669L9.4368 10.352C9.4368 10.8005 9.0728 11.1645 8.6243 11.1645C8.1758 11.1645 7.8118 10.8005 7.8118 10.352L7.81169 8.63817L7.59178 8.63914C5.49661 8.63914 3.79144 10.3421 3.79144 12.4362V18.4119C3.79144 20.5049 5.49661 22.2079 7.59178 22.2079H17.8661C19.9613 22.2079 21.6664 20.5049 21.6664 18.4119V12.4362C21.6664 10.3421 19.9613 8.63914 17.8661 8.63914ZM12.7301 3.79134C11.8516 3.82167 11.0282 4.125 10.4064 4.74034C9.79357 5.34781 9.45011 6.15308 9.43716 7.01306L16.0017 7.01317L15.9984 6.87518C15.8987 5.15829 14.4716 3.79134 12.7301 3.79134Z"
+                      fill="#999999" />
+                  </svg>
+                  О компании
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">
+                  <svg class="menu-icon" width="22" height="23" viewBox="0 0 22 23" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.7625 0.166992C13.5942 0.166992 15.9335 2.32462 16.2219 5.08416L16.3024 5.08511C17.8732 5.08511 19.7831 6.12836 20.4277 9.05444L21.2825 15.6704C21.589 17.8056 21.2055 19.5184 20.1406 20.7469C19.0811 21.9689 17.4041 22.6156 15.2905 22.6156H6.24687C3.92529 22.6156 2.30787 22.0469 1.30145 20.8779C0.290701 19.7058 -0.047299 17.9475 0.297201 15.653L1.13787 9.12486C1.69037 6.13161 3.71078 5.08511 5.27512 5.08511C5.41017 3.83979 5.9717 2.65509 6.86253 1.76708C7.88628 0.749825 9.29786 0.166992 10.7398 0.166992H10.7625ZM16.3024 6.71011H5.27512C4.79737 6.71011 3.20053 6.90294 2.74228 9.37727L1.90595 15.8773C1.63403 17.7005 1.8442 19.02 2.53212 19.8184C3.21137 20.6071 4.42687 20.9906 6.24687 20.9906H15.2905C16.4259 20.9906 17.9761 20.7642 18.9121 19.683C19.6553 18.8261 19.911 17.5499 19.6726 15.8892L18.8287 9.33286C18.469 7.71761 17.52 6.71011 16.3024 6.71011ZM13.9221 9.72622C14.3706 9.72622 14.7595 10.0902 14.7595 10.5387C14.7595 10.9872 14.4204 11.3512 13.9719 11.3512H13.9221C13.4736 11.3512 13.1096 10.9872 13.1096 10.5387C13.1096 10.0902 13.4736 9.72622 13.9221 9.72622ZM7.60613 9.72622C8.05463 9.72622 8.44354 10.0902 8.44354 10.5387C8.44354 10.9872 8.10338 11.3512 7.65488 11.3512H7.60613C7.15763 11.3512 6.79363 10.9872 6.79363 10.5387C6.79363 10.0902 7.15763 9.72622 7.60613 9.72622ZM10.7593 1.79199H10.743C9.72361 1.79199 8.73019 2.20258 8.00978 2.91866C7.42294 3.50286 7.03913 4.27087 6.91497 5.0846L14.5842 5.08491C14.3058 3.22349 12.6962 1.79199 10.7593 1.79199Z"
+                      fill="#999999" />
+                  </svg>
+                  Продукция
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">
+                  <svg class="menu-icon" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.7 13.66h.13l.285.002c2.429.012 8.118.233 8.118 3.986 0 3.48-4.672 3.945-8.307 3.963h-.64c-2.43-.014-8.12-.234-8.12-3.986 0-3.554 4.87-3.964 8.534-3.964zm0 1.626c-4.584 0-6.908.787-6.908 2.339 0 1.566 2.324 2.361 6.908 2.361 4.584 0 6.909-.787 6.909-2.338 0-1.568-2.325-2.362-6.909-2.362zm10.104-8.707c.449 0 .813.364.813.812V8.75h1.404a.813.813 0 010 1.626l-1.404-.001v1.361a.813.813 0 01-1.625 0v-1.361H16.59a.813.813 0 010-1.624l1.402-.001V7.39c0-.448.364-.812.812-.812zM8.7.167a5.767 5.767 0 015.761 5.76 5.767 5.767 0 01-5.76 5.762h-.035a5.71 5.71 0 01-4.058-1.696A5.708 5.708 0 012.94 5.925 5.767 5.767 0 018.7.167zm0 1.625a4.141 4.141 0 00-4.135 4.136 4.093 4.093 0 001.195 2.92 4.1 4.1 0 002.91 1.216l.03.803v-.803a4.141 4.141 0 004.136-4.136A4.141 4.141 0 008.7 1.792z"
+                      fill="#999" />
+                  </svg>
+                  Вакансии
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">
+                  <svg class="menu-icon" width="19" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.27.167c4.928 0 8.938 4.04 8.938 9.005 0 6.105-6.994 12.12-8.938 12.12-1.943 0-8.937-6.015-8.937-12.12C.333 4.206 4.343.167 9.27.167zm0 1.625c-4.032 0-7.312 3.311-7.312 7.38 0 5.178 6.092 10.222 7.312 10.49 1.22-.27 7.313-5.313 7.313-10.49 0-4.069-3.28-7.38-7.313-7.38zm.001 3.791a3.525 3.525 0 013.521 3.522c0 1.942-1.58 3.52-3.52 3.52a3.524 3.524 0 01-3.521-3.52 3.525 3.525 0 013.52-3.522zm0 1.625a1.897 1.897 0 101.896 1.897c0-1.046-.85-1.897-1.896-1.897z"
+                      fill="#999" />
+                  </svg>
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn proposal animButton --blue" data-content="Запросить коммерческое предложение">Запросить
+            коммерческое предложение</button>
+          <button class="btn tender animButton" data-content="Пригласить на тендер">Пригласить на тендер</button>
+          <span class="grey-text copyright fs-12">
+            Copyright © OOO «Геопак» 2001-2021 г<br>
+            Все права защищены
+          </span>
+          <a href="#" class="confidential fs-12 animate-link --back"><span>Политика
+              конфиденциальности</span></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- // HEADER -->
+
+    <main class="main main-img">
+      <div class="mobile-header">
+        <div class="container">
+          <div class="mobile-header-wrap">
+            <div class="mobile-header-logo"><a href="#"><img src="./img/logo-footer.svg" alt=""></a></div>
+
+            <div class="mobile-header-group-tel">
+              <a href="tel:+74992132016" class="tel animate-link"><span>7 (499) 213-20-16</span></a>
+              <a href="mailto:geopack@geopack.ru" class="email animate-link"><span>geopack@geopack.ru</span></a>
+            </div>
+
+            <svg class="mobile-header-burger ham hamRotate ham8 js-ham" viewBox="0 0 100 100" height="50" width="50">
+              <path class="line top"
+                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+              <path class="line middle" d="m 30,50 h 40" />
+              <path class="line bottom"
+                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+
+
+      <section class="company-info grid-main --bg-image">
+
+        <div class="company-info-image-bg">
+          <img class="" src="./img/image-bg-vac.png" alt="">
+        </div>
+
+        <div class="container">
+          <div class="company-info-container">
+            <div class="breadcrumbs">
+              <div class="breadcrumbs-wrap">
+                <ul class="breadcrumbs-list">
+                  <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+                  <li class="breadcrumbs-item"><span>Вакансии</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="company-info-title title-h2">Вакансии</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vacancy">
+        <div class="container">
+          <div class="vacancy-wrap">
+
+
+            <form action="#" class="vacancy-search search-vacancy">
+              <div class="search-vacancy-group">
+                <div class="search-vacancy-select">
+                  <select name="">
+                    <option value="Выберите точку самовывоза">Все города</option>
+
+                    <option value="Выберите точку самовывоза">Город 1</option>
+
+                    <option value="Выберите точку самовывоза">Город 1</option>
+
+                    <option value="Выберите точку самовывоза">Город 1</option>
+                  </select>
+                </div>
+
+                <div class="search-vacancy-select">
+                  <select name="">
+                    <option value="Выберите точку самовывоза">Все категории</option>
+
+                    <option value="Выберите точку самовывоза">Категория 1</option>
+
+                    <option value="Выберите точку самовывоза">Категория 2</option>
+
+                    <option value="Выберите точку самовывоза">Категория 3</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="search-vacancy-button main-btn animButton --blue"
+                data-content="Найти">Найти</button>
+            </form>
+
+            <div class="vacancy-caption">
+              <div class="vacancy-caption-name">Должность</div>
+              <div class="vacancy-caption-name">Город</div>
+              <div class="vacancy-caption-name">Описание</div>
+            </div>
+
+            <div class="vacancy-list">
+              <div class="vacancy-item card-vacancy">
+                <div class="card-vacancy-group-one" data-name="Должность">
+                  <div class="card-vacancy-name"><a href="#">Супервайзер (временная позиция)</a></div>
+
+                  <div class="card-vacancy-category">
+                    <span class="card-vacancy-category-name">Категория вакансии</span>
+                    <span class="card-vacancy-category-value">Техническое обслуживание</span>
+                  </div>
+                </div>
+
+                <div class="card-vacancy-group-two" data-name="Город">
+                  <div class="card-vacancy-city">Красноармейск</div>
+                </div>
+
+                <div class="card-vacancy-group-three" data-name="Описание">
+                  <div class="card-vacancy-text">
+                    <ul class="list-check">
+                      <li>Требуемый опыт работы: 3–6 лет.</li>
+                      <li>Полная занятость, полный день.</li>
+                      <li>Ключевые навыки: штатное расписание; кадровое делопроизводство; 1C: Зарплата и
+                        кадры; трудовое законодательство РФ; график отпусков; кадры.</li>
+                    </ul>
+                  </div>
+
+                  <a href="#" class="card-vacancy-button main-btn animButton"
+                    data-content="Откликнуться">Откликнуться</a>
+                </div>
+              </div>
+
+              <div class="vacancy-item card-vacancy">
+                <div class="card-vacancy-group-one" data-name="Должность">
+                  <div class="card-vacancy-name"><a href="#">Специалист по кадровому администрированию
+                      (делопроизводству)</a>
+                  </div>
+
+                  <div class="card-vacancy-category">
+                    <span class="card-vacancy-category-name">Категория вакансии</span>
+                    <span class="card-vacancy-category-value">Техническое обслуживание</span>
+                  </div>
+                </div>
+
+                <div class="card-vacancy-group-two" data-name="Город">
+                  <div class="card-vacancy-city">Москва</div>
+                </div>
+
+                <div class="card-vacancy-group-three" data-name="Описание">
+                  <div class="card-vacancy-text">
+                    <ul class="list-check">
+                      <li>Требуемый опыт работы: 3–6 лет.</li>
+                      <li>Полная занятость, полный день.</li>
+                      <li>Ключевые навыки: штатное расписание; кадровое делопроизводство; 1C: Зарплата и
+                        кадры; трудовое законодательство РФ; график отпусков; кадры.</li>
+                    </ul>
+                  </div>
+
+                  <a href="#" class="card-vacancy-button main-btn animButton"
+                    data-content="Откликнуться">Откликнуться</a>
+                </div>
+              </div>
+
+              <div class="vacancy-item card-vacancy">
+                <div class="card-vacancy-group-one" data-name="Должность">
+                  <div class="card-vacancy-name"><a href="#">Финансовый координатор</a></div>
+
+                  <div class="card-vacancy-category">
+                    <span class="card-vacancy-category-name">Категория вакансии</span>
+                    <span class="card-vacancy-category-value">Техническое обслуживание</span>
+                  </div>
+                </div>
+
+                <div class="card-vacancy-group-two" data-name="Город">
+                  <div class="card-vacancy-city">Кондрово</div>
+                </div>
+
+                <div class="card-vacancy-group-three" data-name="Описание">
+                  <div class="card-vacancy-text">
+                    <ul class="list-check">
+                      <li>Требуемый опыт работы: 3–6 лет.</li>
+                      <li>Полная занятость, полный день.</li>
+                      <li>Ключевые навыки: штатное расписание; кадровое делопроизводство; 1C: Зарплата и
+                        кадры; трудовое законодательство РФ; график отпусков; кадры.</li>
+                    </ul>
+                  </div>
+
+                  <a href="#" class="card-vacancy-button main-btn animButton"
+                    data-content="Откликнуться">Откликнуться</a>
+                </div>
+              </div>
+
+              <div class="vacancy-item card-vacancy">
+                <div class="card-vacancy-group-one" data-name="Должность">
+                  <div class="card-vacancy-name"><a href="#">Супервайзер (временная позиция)</a></div>
+
+                  <div class="card-vacancy-category">
+                    <span class="card-vacancy-category-name">Категория вакансии</span>
+                    <span class="card-vacancy-category-value">Техническое обслуживание</span>
+                  </div>
+                </div>
+
+                <div class="card-vacancy-group-two" data-name="Город">
+                  <div class="card-vacancy-city">Красноармейск</div>
+                </div>
+
+                <div class="card-vacancy-group-three" data-name="Описание">
+                  <div class="card-vacancy-text">
+                    <ul class="list-check">
+                      <li>Требуемый опыт работы: 3–6 лет.</li>
+                      <li>Полная занятость, полный день.</li>
+                      <li>Ключевые навыки: штатное расписание; кадровое делопроизводство; 1C: Зарплата и
+                        кадры; трудовое законодательство РФ; график отпусков; кадры.</li>
+                    </ul>
+                  </div>
+
+                  <a href="#" class="card-vacancy-button main-btn animButton"
+                    data-content="Откликнуться">Откликнуться</a>
+                </div>
+              </div>
+
+              <div class="vacancy-item card-vacancy">
+                <div class="card-vacancy-group-one" data-name="Должность">
+                  <div class="card-vacancy-name"><a href="#">Специалист по кадровому администрированию
+                      (делопроизводству)</a>
+                  </div>
+
+                  <div class="card-vacancy-category">
+                    <span class="card-vacancy-category-name">Категория вакансии</span>
+                    <span class="card-vacancy-category-value">Техническое обслуживание</span>
+                  </div>
+                </div>
+
+                <div class="card-vacancy-group-two" data-name="Город">
+                  <div class="card-vacancy-city">Москва</div>
+                </div>
+
+                <div class="card-vacancy-group-three" data-name="Описание">
+                  <div class="card-vacancy-text">
+                    <ul class="list-check">
+                      <li>Требуемый опыт работы: 3–6 лет.</li>
+                      <li>Полная занятость, полный день.</li>
+                      <li>Ключевые навыки: штатное расписание; кадровое делопроизводство; 1C: Зарплата и
+                        кадры; трудовое законодательство РФ; график отпусков; кадры.</li>
+                    </ul>
+                  </div>
+
+                  <a href="#" class="card-vacancy-button main-btn animButton"
+                    data-content="Откликнуться">Откликнуться</a>
+                </div>
+              </div>
+
+              <div class="vacancy-item card-vacancy">
+                <div class="card-vacancy-group-one" data-name="Должность">
+                  <div class="card-vacancy-name"><a href="#">Финансовый координатор</a></div>
+
+                  <div class="card-vacancy-category">
+                    <span class="card-vacancy-category-name">Категория вакансии</span>
+                    <span class="card-vacancy-category-value">Техническое обслуживание</span>
+                  </div>
+                </div>
+
+                <div class="card-vacancy-group-two" data-name="Город">
+                  <div class="card-vacancy-city">Кондрово</div>
+                </div>
+
+                <div class="card-vacancy-group-three" data-name="Описание">
+                  <div class="card-vacancy-text">
+                    <ul class="list-check">
+                      <li>Требуемый опыт работы: 3–6 лет.</li>
+                      <li>Полная занятость, полный день.</li>
+                      <li>Ключевые навыки: штатное расписание; кадровое делопроизводство; 1C: Зарплата и
+                        кадры; трудовое законодательство РФ; график отпусков; кадры.</li>
+                    </ul>
+                  </div>
+
+                  <a href="#" class="card-vacancy-button main-btn animButton"
+                    data-content="Откликнуться">Откликнуться</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="vacancy-pagination pagination">
+              <div class="pagination-list">
+                <div class="pagination-item --prev"><a href="#"></a></div>
+                <div class="pagination-item --number current"><a href="#">1</a></div>
+                <div class="pagination-item --number"><a href="#">2</a></div>
+                <div class="pagination-item --number"><a href="#">3</a></div>
+                <div class="pagination-item --number"><a href="#">4</a></div>
+                <div class="pagination-item --dots"><span>...</span></div>
+                <div class="pagination-item --number"><a href="#">10</a></div>
+                <div class="pagination-item --next"><a href="#"></a></div>
+
+              </div>
+
+              <div class="pagination-all">
+                <span>1 - 8</span>
+                из
+                <span>233</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="career">
+        <div class="container">
+          <div class="career-wrap">
+
+            <div class="career-image-bg">
+              <img src="./img/image-bg-career.png" alt="">
+            </div>
+
+            <div class="career-row">
+              <div class="career-column">
+                <div class="career-title title-h2">карьера в Geopack</div>
+
+                <div class="career-text">
+                  <p>
+                    Наша команда работает согласованно и эффективно. Исполнительность, нацеленность на улучшение
+                    результатов, качественное выполнение личных профессиональных задач, которые позволяют
+                    достигать лучших результатов в работе всей компании.
+                  </p>
+                </div>
+              </div>
+
+              <div class="career-column">
+                <div class="career-name">Нужна работа?</div>
+
+                <div class="career-text">
+                  <p>
+                    подробная информация по телефону
+                  </p>
+                </div>
+
+                <a href="tel:+74992132016" class="career-phone animate-link --white"><span> +7 (499)
+                    213-20-16</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="seo-text grid-main --small-padding">
+        <div class="container">
+          <div class="seo-container">
+            <h1 class="title-h1">Заголовок H1 для SEO</h1>
+            <div class="grey-text">
+              <p>Компания <strong>«ГеоПак»</strong> выпускает гофроупаковку с 1999 года. Собственное производство
+                гофрокартона располагается в 37км от Москвы по Ярославскому шоссе - городе Красноармейск.
+              </p>
+              <p>Основные производственные мощности предприятия изначально обеспечили изготовление
+                <strong>полного</strong>
+                технологического цикла <strong>производства гофротары</strong> от выпуска <strong>гофрокартона</strong>
+                до
+                широкого ассортимента <strong>гофрокоробов</strong> и других изделий.
+              </p>
+              <p>Основные наши клиенты - это крупные производственные предприятия- производители товаров народного
+                потребления. И поэтому мы обращаем внимание на удобство работы и быстроту обслуживания заказов, гарантии
+                качества и стабильность поставок.
+              </p>
+            </div>
+          </div>
+      </section>
+
+      <div class="bg-overlay"></div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer grid-footer">
+      <div class="container">
+        <div class="footer-1">
+          <div class="footer-logo">
+            <img src="./img/logo-footer.svg" alt="ГеоПак">
+          </div>
+          <div class="footer-tel">
+            <span class="grey-text hot-line fs-12">
+              Горячая линия
+            </span>
+            <a href="tel:+74992132016" class="tel animate-link"><span>+7 (499) 213-20-16</span></a>
+          </div>
+          <a href="mailto:geopack@geopack.ru" class="email animate-link --back"><span> geopack@geopack.ru</span></a>
+          <div class="footer-lacation">
+            <span class="grey-text fs-12">
+              Московский офис
+            </span>
+            <span class="black-text">
+              Москва, ул. Добролюбова, д. 3, стр. 1
+            </span>
+            <a href="#" class="link animate-link --back"><span>мы на карте</span></a>
+          </div>
+          <button class="btn callback animButton --blue" data-content="Заказать звонок">Заказать звонок</button>
+        </div>
+        <div class="footer-2">
+          <div class="production-location">
+            <div class="production-footer grey-text fs-12">
+              Производство:
+            </div>
+            <div class="location">
+              г.Красноармейск, Муромское шоссе д.1 стр.3. <br>
+              г.Кондрово, ул. Циолковского д.5В
+            </div>
+          </div>
+          <div class="development-wesma">
+            <div class="development grey-text">
+              Разработка сайта
+            </div>
+            <div class="wesma gray-text">
+              <a href="#"><img src="./img/wesma.svg" alt="Wesma" class="wesma-logo"></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- // FOOTER -->
+
+    <div class="popup-general modal" id="popup-tender">
+
+      <div class="popup-general__body"
+        style="background: url('./img/image-modal-bg-1.png') 100% 100% / cover, #484d97;">
+
+        <div class="popup-general__close js-modal-close"></div>
+
+        <div class="popup-general__group-title">
+          <div class="popup-general__title">Пригласить на тендер</div>
+        </div>
+
+        <div class="popup-general__wrap">
+          <div class="form-popup-general__lsit">
+            <from action="#" class="popup-general__form form-popup-general">
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Ваше имя">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="tel" placeholder="Ваш телефон">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Ваш e-mail">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <select name="">
+                  <option value="Выберите точку самовывоза">Закупки</option>
+
+                  <option value="Выберите точку самовывоза">Закупки 1</option>
+
+                  <option value="Выберите точку самовывоза">Закупки 1</option>
+
+                  <option value="Выберите точку самовывоза">Закупки 1</option>
+                </select>
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <textarea placeholder="Ваше сообщение"></textarea>
+              </div>
+          </div>
+
+          <div class="popup-general__error">Заполните все обязательные поля</div>
+          <div class="popup-general__error">Неверный логин или пароль.</div>
+
+          <div class="form-popup-general__wrap-button">
+            <button type="submit" class="form-popup-general__submit animButton"
+              data-content="Отправить"><span>Отправить</span></button>
+          </div>
+
+          <div class="form-popup-general__subtext">
+            Согласен на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a>
+            </from>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="popup-general modal" id="popup-commercial-proposal">
+
+      <div class="popup-general__body"
+        style="background: url('./img/image-modal-bg-2.png') 100% 100% / cover, #484d97;">
+
+        <div class="popup-general__close js-modal-close"></div>
+
+        <div class="popup-general__group-title">
+          <div class="popup-general__title">запросить коммерческое предложение</div>
+        </div>
+
+        <div class="popup-general__wrap">
+          <div class="form-popup-general__lsit">
+            <from action="#" class="popup-general__form form-popup-general">
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Ваше имя">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="tel" placeholder="Ваш телефон">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Ваш e-mail">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Ваша компания">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Размер, марка, количество">
+              </div>
+          </div>
+
+          <div class="form-popup-general__wrap-button">
+            <button type="submit" class="form-popup-general__submit animButton"
+              data-content="Отправить">Отправить</button>
+          </div>
+
+          <div class="form-popup-general__subtext">
+            Согласен на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a>
+            </from>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="popup-general modal" id="popup-order">
+
+      <div class="popup-general__body"
+        style="background: url('./img/image-modal-bg-3.png') 100% 100% / cover, #484d97;">
+
+        <div class="popup-general__close js-modal-close"></div>
+
+        <div class="popup-general__group-title">
+          <div class="popup-general__title">Оставить заявку</div>
+        </div>
+
+        <div class="popup-general__wrap">
+          <div class="form-popup-general__lsit">
+            <from action="#" class="popup-general__form form-popup-general">
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Ваше имя">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="tel" placeholder="Ваш телефон">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Ваш e-mail">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Ваша компания">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <textarea placeholder="Ваше сообщение"></textarea>
+              </div>
+          </div>
+
+          <div class="form-popup-general__wrap-button">
+            <button type="submit" class="form-popup-general__submit animButton"
+              data-content="Отправить">Отправить</button>
+          </div>
+
+          <div class="form-popup-general__subtext">
+            Согласен на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a>
+            </from>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="popup-general modal" id="popup-respond">
+
+      <div class="popup-general__body"
+        style="background: url('./img/image-modal-bg-4.png') 100% 100% / cover, #484d97;">
+
+        <div class="popup-general__close js-modal-close"></div>
+
+        <div class="popup-general__group-title">
+          <div class="popup-general__title">Откликнуться</div>
+        </div>
+
+        <div class="popup-general__wrap">
+          <div class="form-popup-general__lsit">
+            <from action="#" class="popup-general__form form-popup-general">
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Ваше имя">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="tel" placeholder="Ваш телефон">
+              </div>
+
+              <div class="form-popup-general__wrap-input wrap-input-modal">
+                <input type="text" placeholder="Ваш e-mail">
+              </div>
+          </div>
+
+          <div class="form-popup-general__wrap-button">
+            <button type="submit" class="form-popup-general__submit animButton"
+              data-content="Отправить">Отправить</button>
+          </div>
+
+          <div class="form-popup-general__subtext">
+            Согласен на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a>
+            </from>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="popup-overlay"></div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="./js/lightgallery-all.min.js"></script>
+  <script src="./js/jquery.mCustomScrollbar.js"></script>
+  <script src="./js/jquery.inputmask.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/jquery.nice-select.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+.application-request {
+	background: #f8f8fa;
+	& .application-container {
+		padding: 60px 0 70px 0;
+	}
+	& .application-header {
+		margin-bottom: 40px;
+		& .title-h2 {
+			margin-bottom: 32px;
+		}
+
+		& .application-text {
+			font-size: 18px;
+			line-height: 140%;
+		}
+	}
+	& .order-form {
+		display: grid;
+		grid-template-columns: 0.642fr 1fr;
+		grid-gap: 20px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		& .wrap-input {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-bottom: 25px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			& input {
+				width: 100%;
+				padding: 22px 25px;
+				font-size: 14px;
+				line-height: 1.2;
+				border-radius: 4px;
+				background: #ededf4;
+				&::placeholder {
+					color: #000;
+					opacity: 0.6;
+				}
+			}
+		}
+	}
+
+	& .form-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		& .wrap-input-textarea {
+			height: 100%;
+			width: 100%;
+			padding: 25px 22px;
+			// font-size: 16px;
+			// resize: none;
+			// border-radius: 4px;
+			border-radius: 4px;
+			background: #ededf4;
+			margin-bottom: 25px;
+			& textarea {
+				height: 100%;
+				width: 100%;
+				font-size: 16px;
+				resize: none;
+				border-radius: 4px;
+				background: #ededf4;
+			}
+			&::placeholder {
+				color: #000;
+				opacity: 0.6;
+			}
+		}
+		& .form-button-container {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			& .form-order-checkbox {
+				text-align: end;
+				padding-right: 20px;
+				& a {
+					color: #000000;
+					border-bottom: 1px solid #000;
+					transition: all 0.3s ease;
+					&:hover {
+						border-color: transparent;
+					}
+				}
+			}
+		}
+		& .main-btn {
+			max-width: 260px;
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 810px) {
+		& .order-form {
+			grid-template-columns: 1fr;
+			// grid-template-rows: 1fr 1fr;
+		}
+	}
+
+	@media (max-width: 768px) {
+		& .application-container {
+			padding: 30px 0 30px 0;
+		}
+
+		& .application-header {
+			margin-bottom: 20px;
+			& .application-text {
+				font-size: 14px;
+			}
+		}
+
+		& .form-button-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		& .form-column .form-button-container .form-order-checkbox {
+			text-align: center;
+			margin-bottom: 20px;
+			padding-right: 0;
+		}
+	}
+}

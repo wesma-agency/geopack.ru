@@ -1,0 +1,66 @@
+//========================================================ОБНУЛЕНИЕ========================================================
+
+@import "_nullstyle";
+
+//===================================================ПЕРЕМЕННЫЕ========================================================
+
+@import "_variables";
+
+//===================================================ШРИФТЫ========================================================
+
+@import "_fonts";
+
+//===================================================МИКСИНЫ========================================================
+
+@import "_mixin";
+
+//========================================================ОБШИЕ СТИЛИ========================================================
+
+@import "_overall-style.scss";
+
+//========================================================ШАПКА САЙТА========================================================
+
+@import "./syle-component/_header";
+
+@import "./syle-component/_main-menu";
+
+@import "./syle-component/_company-info";
+
+@import "./syle-component/_advantages";
+
+@import "./syle-component/_facts-numbers";
+
+@import "./syle-component/_production";
+
+@import "./syle-component/_partnership";
+
+@import "./syle-component/_certification";
+
+@import "./syle-component/_news";
+
+@import "./syle-component/_seo-text";
+
+@import "./syle-component/_catalog";
+
+@import "./syle-component/_technology";
+
+@import "./syle-component/_cardboard";
+
+@import "./syle-component/_product";
+
+@import "./syle-component/_application-request";
+@import "./syle-component/_vacancy";
+
+@import "./syle-component/_page-news";
+
+//========================================================ОСНОВНОЙ КОНТЕНТ СТРАНИЦЫ 1========================================================
+
+@import "./style-page/_style-page-index";
+
+//========================================================ПОДВАЛ САЙТА========================================================
+
+@import "./syle-component/_footer";
+
+//========================================================АНИМАЦИИ========================================================
+
+@import "_animate";

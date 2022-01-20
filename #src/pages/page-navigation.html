@@ -1,0 +1,93 @@
+@@include("../components/_header.html")
+
+<main class="main main-img">
+    <div class="mobile-header">
+        <div class="container">
+            <div class="mobile-header-wrap">
+                <div class="mobile-header-logo"><a href="#"><img src="./img/logo-footer.svg" alt=""></a></div>
+
+                <div class="mobile-header-group-tel">
+                    <a href="tel:+74992132016" class="tel animate-link"><span>7 (499) 213-20-16</span></a>
+                    <a href="mailto:geopack@geopack.ru" class="email animate-link"><span>geopack@geopack.ru</span></a>
+                </div>
+
+                <svg class="mobile-header-burger ham hamRotate ham8 js-ham" viewBox="0 0 100 100" height="50"
+                    width="50">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom"
+                        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-navigation">
+        <div class="container">
+            <div class="page-navigation__row">
+                <div class="page-navigation__column">
+                    <div class="page-navigation__title title-h2">Страницы</div>
+                    <ul>
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./page-catalog.html">Каталог</a></li>
+                        <li><a href="./page-vacancy.html">Вакансии</a></li>
+                        <li><a href="./page-information.html">Информационная страница</a></li>
+                        <li><a href="./page-news.html">Страница новостей</a></li>
+                        <li><a href="./product-page.html">Карточка товара</a></li>
+                    </ul>
+                </div>
+
+                <div class="page-navigation__column">
+                    <div class="page-navigation__title title-h2">Попапы</div>
+                    <ul>
+                        <li class="js-show-popup"><a href="#popup-tender">Пригласить на тендер</a></li>
+                        <li class="js-show-popup"><a href="#popup-commercial-proposal">Запросить коммерческое
+                                предложение</a></li>
+                        <li class="js-show-popup"><a href="#popup-order">Оставить заявку</a></li>
+                        <li class="js-show-popup"><a href="#popup-respond">Откликнуться</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrapper .main {
+            flex-grow: 1;
+        }
+
+        .page-navigation {
+            padding: 100px 0;
+        }
+
+        .page-navigation__title {
+            margin-bottom: 30px;
+        }
+
+        .page-navigation__row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .page-navigation__column ul li {
+            margin-bottom: 20px;
+        }
+
+        .page-navigation__column ul li a {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 120%;
+            color: #484D97;
+        }
+    </style>
+
+    <div class="bg-overlay"></div>
+</main>
+
+@@include("../components/_footer.html")

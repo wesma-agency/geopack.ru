@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/lightgallery.min.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/nice-select.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper grid-16">
+
+        <!-- HEADER -->
+
+        <header class="header grid-header-aside bg-white">
+            <div class="header-close-menu"></div>
+            <div class="header__wrap">
+                <div class="logo-container">
+                    <div class="logo-header">
+                        <a href="#"><img src="./img/logo.svg" alt="ГеоПак"></a>
+                    </div>
+                </div>
+                <div class="header-container flex-column">
+                    <span class="grey-text hot-line fs-12">
+                        Горячая линия
+                    </span>
+                    <a href="tel:+74992132016" class="tel animate-link"><span>7 (499) 213-20-16</span></a>
+                    <a href="mailto:geopack@geopack.ru"
+                        class="email animate-link --back"><span>geopack@geopack.ru</span></a>
+                    <span class="grey-text fs-12">
+                        Мы находимся
+                    </span>
+                    <span class="black-text">
+                        г. Красноармейск, Муромцевское шоссе д. 1, стр. 3
+                    </span>
+                    <a href="#" class="link animate-link --back"><span>мы на карте</span></a>
+                    <div class="main-menu">
+                        <ul class="menu-list grey-text">
+                            <li class="menu-item">
+                                <a class="menu-link current" href="#">
+                                    <svg class="menu-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.7334 2.16634C15.4139 2.16634 17.5995 4.3361 17.6287 7.01304L17.8661 7.01414C20.8583 7.01414 23.2914 9.44623 23.2914 12.4362V18.4119C23.2914 21.4008 20.8583 23.8329 17.8661 23.8329H7.59178C4.60069 23.8329 2.16644 21.4008 2.16644 18.4119V12.4362C2.16644 9.44623 4.60069 7.01414 7.59178 7.01414L7.81278 7.01317L7.81965 6.80248C7.88768 5.57349 8.39384 4.44603 9.26238 3.58659C10.1919 2.66467 11.4399 2.20425 12.7334 2.16634ZM17.8661 8.63914L17.6289 8.63817L17.629 10.352C17.629 10.8005 17.265 11.1645 16.8165 11.1645C16.368 11.1645 16.004 10.8005 16.004 10.352L16.0039 8.63817H9.43669L9.4368 10.352C9.4368 10.8005 9.0728 11.1645 8.6243 11.1645C8.1758 11.1645 7.8118 10.8005 7.8118 10.352L7.81169 8.63817L7.59178 8.63914C5.49661 8.63914 3.79144 10.3421 3.79144 12.4362V18.4119C3.79144 20.5049 5.49661 22.2079 7.59178 22.2079H17.8661C19.9613 22.2079 21.6664 20.5049 21.6664 18.4119V12.4362C21.6664 10.3421 19.9613 8.63914 17.8661 8.63914ZM12.7301 3.79134C11.8516 3.82167 11.0282 4.125 10.4064 4.74034C9.79357 5.34781 9.45011 6.15308 9.43716 7.01306L16.0017 7.01317L15.9984 6.87518C15.8987 5.15829 14.4716 3.79134 12.7301 3.79134Z"
+                                            fill="#999999" />
+                                    </svg>
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="#">
+                                    <svg class="menu-icon" width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.7625 0.166992C13.5942 0.166992 15.9335 2.32462 16.2219 5.08416L16.3024 5.08511C17.8732 5.08511 19.7831 6.12836 20.4277 9.05444L21.2825 15.6704C21.589 17.8056 21.2055 19.5184 20.1406 20.7469C19.0811 21.9689 17.4041 22.6156 15.2905 22.6156H6.24687C3.92529 22.6156 2.30787 22.0469 1.30145 20.8779C0.290701 19.7058 -0.047299 17.9475 0.297201 15.653L1.13787 9.12486C1.69037 6.13161 3.71078 5.08511 5.27512 5.08511C5.41017 3.83979 5.9717 2.65509 6.86253 1.76708C7.88628 0.749825 9.29786 0.166992 10.7398 0.166992H10.7625ZM16.3024 6.71011H5.27512C4.79737 6.71011 3.20053 6.90294 2.74228 9.37727L1.90595 15.8773C1.63403 17.7005 1.8442 19.02 2.53212 19.8184C3.21137 20.6071 4.42687 20.9906 6.24687 20.9906H15.2905C16.4259 20.9906 17.9761 20.7642 18.9121 19.683C19.6553 18.8261 19.911 17.5499 19.6726 15.8892L18.8287 9.33286C18.469 7.71761 17.52 6.71011 16.3024 6.71011ZM13.9221 9.72622C14.3706 9.72622 14.7595 10.0902 14.7595 10.5387C14.7595 10.9872 14.4204 11.3512 13.9719 11.3512H13.9221C13.4736 11.3512 13.1096 10.9872 13.1096 10.5387C13.1096 10.0902 13.4736 9.72622 13.9221 9.72622ZM7.60613 9.72622C8.05463 9.72622 8.44354 10.0902 8.44354 10.5387C8.44354 10.9872 8.10338 11.3512 7.65488 11.3512H7.60613C7.15763 11.3512 6.79363 10.9872 6.79363 10.5387C6.79363 10.0902 7.15763 9.72622 7.60613 9.72622ZM10.7593 1.79199H10.743C9.72361 1.79199 8.73019 2.20258 8.00978 2.91866C7.42294 3.50286 7.03913 4.27087 6.91497 5.0846L14.5842 5.08491C14.3058 3.22349 12.6962 1.79199 10.7593 1.79199Z"
+                                            fill="#999999" />
+                                    </svg>
+                                    Продукция
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="#">
+                                    <svg class="menu-icon" width="22" height="22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.7 13.66h.13l.285.002c2.429.012 8.118.233 8.118 3.986 0 3.48-4.672 3.945-8.307 3.963h-.64c-2.43-.014-8.12-.234-8.12-3.986 0-3.554 4.87-3.964 8.534-3.964zm0 1.626c-4.584 0-6.908.787-6.908 2.339 0 1.566 2.324 2.361 6.908 2.361 4.584 0 6.909-.787 6.909-2.338 0-1.568-2.325-2.362-6.909-2.362zm10.104-8.707c.449 0 .813.364.813.812V8.75h1.404a.813.813 0 010 1.626l-1.404-.001v1.361a.813.813 0 01-1.625 0v-1.361H16.59a.813.813 0 010-1.624l1.402-.001V7.39c0-.448.364-.812.812-.812zM8.7.167a5.767 5.767 0 015.761 5.76 5.767 5.767 0 01-5.76 5.762h-.035a5.71 5.71 0 01-4.058-1.696A5.708 5.708 0 012.94 5.925 5.767 5.767 0 018.7.167zm0 1.625a4.141 4.141 0 00-4.135 4.136 4.093 4.093 0 001.195 2.92 4.1 4.1 0 002.91 1.216l.03.803v-.803a4.141 4.141 0 004.136-4.136A4.141 4.141 0 008.7 1.792z"
+                                            fill="#999" />
+                                    </svg>
+                                    Вакансии
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="#">
+                                    <svg class="menu-icon" width="19" height="22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.27.167c4.928 0 8.938 4.04 8.938 9.005 0 6.105-6.994 12.12-8.938 12.12-1.943 0-8.937-6.015-8.937-12.12C.333 4.206 4.343.167 9.27.167zm0 1.625c-4.032 0-7.312 3.311-7.312 7.38 0 5.178 6.092 10.222 7.312 10.49 1.22-.27 7.313-5.313 7.313-10.49 0-4.069-3.28-7.38-7.313-7.38zm.001 3.791a3.525 3.525 0 013.521 3.522c0 1.942-1.58 3.52-3.52 3.52a3.524 3.524 0 01-3.521-3.52 3.525 3.525 0 013.52-3.522zm0 1.625a1.897 1.897 0 101.896 1.897c0-1.046-.85-1.897-1.896-1.897z"
+                                            fill="#999" />
+                                    </svg>
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn proposal animButton --blue"
+                        data-content="Запросить коммерческое предложение">Запросить
+                        коммерческое предложение</button>
+                    <button class="btn tender animButton" data-content="Пригласить на тендер">Пригласить на
+                        тендер</button>
+                    <span class="grey-text copyright fs-12">
+                        Copyright © OOO «Геопак» 2001-2021 г<br>
+                        Все права защищены
+                    </span>
+                    <a href="#" class="confidential fs-12 animate-link --back"><span>Политика
+                            конфиденциальности</span></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- // HEADER -->
+
+        <!-- MAIN -->
+
+        <main class="main grid-main bg-grey main-img">
+            <div class="mobile-header">
+                <div class="container">
+                    <div class="mobile-header-wrap">
+                        <div class="mobile-header-logo"><a href="#"><img src="./img/logo-footer.svg" alt=""></a></div>
+
+                        <div class="mobile-header-group-tel">
+                            <a href="tel:+74992132016" class="tel animate-link"><span>7 (499) 213-20-16</span></a>
+                            <a href="mailto:geopack@geopack.ru"
+                                class="email animate-link"><span>geopack@geopack.ru</span></a>
+                        </div>
+
+                        <svg class="mobile-header-burger ham hamRotate ham8 js-ham" viewBox="0 0 100 100" height="50"
+                            width="50">
+                            <path class="line top"
+                                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                            <path class="line middle" d="m 30,50 h 40" />
+                            <path class="line bottom"
+                                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <section class="company-info grid-main">
+                <div class="container">
+                    <div class="company-info-container">
+                        <span class="semi-bold black-text">
+                            <p>Компания ГеоПак основана в 1999 году.</p>
+                            <p>С 2015 года вертикально интегрированная компания, имеющая две производственные площадки,
+                                с полным
+                                технологическим циклом производства ролевой и гофро-продукции.</p>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantages grid-main white-text p-negative">
+                <div class="container">
+                    <div class="advantages-container">
+                        <!-- <img src="../img/main-img.png" alt="Изготавление и разработка тары и упаковки" class="main-img"> -->
+                        <div class="advantages-header title-h2">Изготавливаем и разрабатываем тару и упаковку
+                        </div>
+                        <div class="advantages-txt fs-18 mb-60">Стараемся по максимуму обеспечить бесперебойную работу
+                            ваших
+                            конвейеров
+                        </div>
+                        <ul class="advantages-list">
+                            <li class="advantage-item anim-items anim-no-scrollTop slideTo">
+                                <div class="purple-square">
+                                    <div class="advantage-icon">
+                                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M26.591 18.419c.516.039.903.49.864 1.006l-.238 3.136c-.196 2.588-2.38 4.614-4.973 4.614h-14.5c-2.594 0-4.778-2.026-4.974-4.614l-.238-3.136a.939.939 0 01.865-1.006c.52-.019.967.348 1.007.865l.236 3.135A3.128 3.128 0 007.744 25.3h14.5a3.127 3.127 0 003.103-2.881l.238-3.135c.04-.517.499-.885 1.006-.865zM16.606 2.5a3.706 3.706 0 013.67 3.224l2.462.001c2.62 0 4.75 2.136 4.75 4.764v4.298a.937.937 0 01-.464.81c-3.085 1.806-6.994 2.86-11.093 3v2.249a.938.938 0 01-1.875 0v-2.248c-4.096-.14-8.004-1.194-11.092-3.002a.935.935 0 01-.464-.809v-4.31c0-2.62 2.136-4.752 4.763-4.752l2.449-.001a3.706 3.706 0 013.67-3.224h3.224zm6.132 5.1H7.263a2.885 2.885 0 00-2.888 2.876v3.765c2.967 1.612 6.708 2.496 10.602 2.498l.017-.002h.014l.595-.006c3.682-.087 7.195-.96 10.01-2.49V10.49a2.884 2.884 0 00-2.875-2.89zm-6.132-3.225h-3.225c-.841 0-1.552.573-1.762 1.35h6.75a1.828 1.828 0 00-1.763-1.35z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                Более чем 20 лет успешной работы на рынке гофроупаковки
+                            </li>
+                            <li class="advantage-item anim-items anim-no-scrollTop slideTo">
+                                <div class="purple-square">
+                                    <div class="advantage-icon">
+                                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M14.726 2.5c3.267 0 5.966 2.49 6.3 5.674l.092.001c1.813 0 4.016 1.204 4.76 4.58l.986 7.634c.354 2.464-.088 4.44-1.317 5.857-1.223 1.41-3.158 2.157-5.596 2.157H9.516c-2.68 0-4.545-.657-5.707-2.005-1.166-1.353-1.556-3.382-1.158-6.03l.97-7.532c.637-3.453 2.968-4.66 4.773-4.66a6.405 6.405 0 011.832-3.83A6.39 6.39 0 0114.7 2.5h.026zm6.392 7.55H8.394c-.55 0-2.393.223-2.922 3.078l-.965 7.5c-.314 2.103-.071 3.626.722 4.547.784.91 2.187 1.353 4.287 1.353H19.95c1.31 0 3.098-.262 4.178-1.51.858-.988 1.153-2.46.878-4.377l-.974-7.565c-.415-1.863-1.51-3.026-2.915-3.026zm-2.746 3.48c.517 0 .966.42.966.938 0 .517-.391.937-.909.937h-.057a.938.938 0 010-1.875zm-7.288 0c.518 0 .966.42.966.938 0 .517-.392.937-.91.937h-.056a.938.938 0 010-1.875zm3.638-9.155h-.018a4.5 4.5 0 00-3.154 1.3 4.498 4.498 0 00-1.264 2.5h8.85a4.47 4.47 0 00-4.414-3.8z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                Широкий ассортимент гофрокоробов и изделий из гофрокартона
+                            </li>
+                            <li class="advantage-item anim-items anim-no-scrollTop slideTo">
+                                <div class="purple-square">
+                                    <div class="advantage-icon">
+                                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.418 2.5c4.236 0 7.082 2.973 7.082 7.395v10.21c0 4.422-2.846 7.395-7.084 7.395H9.581c-4.236 0-7.081-2.973-7.081-7.395V9.895C2.5 5.473 5.345 2.5 9.581 2.5h10.837zm0 1.875H9.58c-3.162 0-5.206 2.166-5.206 5.52v10.21c0 3.354 2.044 5.52 5.206 5.52h10.835c3.164 0 5.209-2.166 5.209-5.52V9.895c0-3.354-2.044-5.52-5.207-5.52zm-5.42 4.23c.518 0 .938.42.938.937v4.92l3.783 2.254a.94.94 0 01-.481 1.743.945.945 0 01-.48-.13l-4.24-2.53a.943.943 0 01-.457-.804V9.541c0-.518.42-.938.938-.938z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                Короткие сроки выполнения заказов
+                            </li>
+                            <li class="advantage-item anim-items anim-no-scrollTop slideTo">
+                                <div class="purple-square">
+                                    <div class="advantage-icon">
+                                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.334 2.5c.895 0 1.765.368 2.389 1.007.622.642.966 1.524.94 2.417.002.202.069.434.189.638a1.442 1.442 0 001.978.519 3.339 3.339 0 014.55 1.22l.779 1.35c.02.036.038.07.053.107a3.341 3.341 0 01-1.263 4.431 1.427 1.427 0 00-.53.527 1.468 1.468 0 00-.15 1.103c.1.375.339.687.675.88a3.337 3.337 0 011.551 2.02 3.342 3.342 0 01-.338 2.525l-.83 1.383a3.33 3.33 0 01-4.534 1.199 1.488 1.488 0 00-.698-.194h-.007a1.45 1.45 0 00-1.003.422 1.429 1.429 0 00-.421 1.027 3.337 3.337 0 01-3.33 3.32h-1.566a3.333 3.333 0 01-3.33-3.328 1.345 1.345 0 00-.189-.665 1.448 1.448 0 00-.88-.685 1.446 1.446 0 00-1.09.146 3.382 3.382 0 01-2.554.307 3.351 3.351 0 01-2-1.588l-.781-1.346a3.322 3.322 0 011.213-4.531c.448-.26.727-.742.727-1.26a1.46 1.46 0 00-.728-1.26 3.336 3.336 0 01-1.213-4.54l.847-1.392c.901-1.567 2.939-2.12 4.528-1.207.216.129.451.194.69.196.779 0 1.43-.642 1.442-1.432a3.287 3.287 0 01.965-2.34 3.3 3.3 0 012.353-.975h1.566zm0 1.876h-1.566a1.441 1.441 0 00-1.443 1.448c-.026 1.828-1.52 3.3-3.329 3.3a3.225 3.225 0 01-1.623-.453 1.456 1.456 0 00-1.97.545l-.846 1.39c-.388.673-.15 1.562.54 1.963a3.342 3.342 0 011.662 2.883 3.34 3.34 0 01-1.665 2.882 1.444 1.444 0 00-.526 1.97l.788 1.36c.196.35.514.604.883.708.367.102.772.059 1.11-.129a3.281 3.281 0 011.654-.442c.286 0 .572.036.852.11a3.335 3.335 0 012.014 1.552 3.2 3.2 0 01.444 1.6c0 .813.652 1.464 1.455 1.464h1.566c.799 0 1.451-.648 1.455-1.446a3.285 3.285 0 01.971-2.353c.623-.622 1.493-.996 2.363-.971.57.014 1.118.167 1.602.442a1.463 1.463 0 001.988-.526l.83-1.384a1.447 1.447 0 00-.533-1.965 3.296 3.296 0 01-1.552-2.022 3.338 3.338 0 01.339-2.524c.287-.5.708-.921 1.213-1.211a1.457 1.457 0 00.521-1.973.705.705 0 01-.043-.086l-.733-1.27a1.456 1.456 0 00-1.982-.536 3.27 3.27 0 01-2.508.346 3.287 3.287 0 01-2.027-1.534 3.193 3.193 0 01-.449-1.607 1.491 1.491 0 00-.411-1.093 1.46 1.46 0 00-1.044-.438zm-.778 6.842c2.334 0 4.233 1.9 4.233 4.234a4.236 4.236 0 01-4.233 4.231 4.236 4.236 0 01-4.232-4.231 4.238 4.238 0 014.232-4.234zm0 1.875a2.361 2.361 0 00-2.357 2.359 2.36 2.36 0 002.357 2.356 2.36 2.36 0 002.358-2.356c0-1.3-1.058-2.359-2.358-2.359z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                Полный технологический цикл производства
+                            </li>
+                            <li class="advantage-item anim-items anim-no-scrollTop slideTo">
+                                <div class="purple-square">
+                                    <div class="advantage-icon">
+                                        <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 27.5c6.904 0 12.5-5.596 12.5-12.5S21.904 2.5 15 2.5 2.5 8.096 2.5 15 8.096 27.5 15 27.5z"
+                                                stroke="#fff" stroke-width="2" stroke-linejoin="round" />
+                                            <path d="M15 22.5a7.5 7.5 0 007.5-7.5" stroke="#fff" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                100% обеспечение собственным сырьём
+                            </li>
+                            <li class="advantage-item anim-items anim-no-scrollTop slideTo">
+                                <div class="purple-square">
+                                    <div class="advantage-icon">
+                                        <svg width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20.651 3.407h0L31.276 9.25a.962.962 0 01.499.843v13.812a.963.963 0 01-.499.843l-10.625 5.844h0a.96.96 0 01-.927 0h0L15.011 28l.928-1.685 3.138 1.726.148.081V16.507l-.052-.028L9.1 10.937s0 0 0 0a.963.963 0 010-1.686l10.625-5.844h0a.963.963 0 01.927 0zm-.415 1.969l-.049-.027-.048.027-8.42 4.63-.16.088.16.087 8.42 4.63.049.027.048-.026 8.42-4.63.16-.088-.16-.088-8.42-4.63zm9.562 17.99l.052-.029V11.72l-.148.082-8.5 4.675-.052.028v11.618l.148-.082 8.5-4.675z"
+                                                fill="#fff" stroke="#484D97" stroke-width=".2" />
+                                            <path
+                                                d="M10.525 16.9h-8.3v-1.925h8.3V16.9zm2.125 8.5h-8.3v-1.925h8.3V25.4zm2.125-4.25h-8.3v-1.925h8.3v1.925z"
+                                                fill="#fff" stroke="#484D97" stroke-width=".2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                Доставка силами собственного автопарка
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="facts-numbers white-text p-negative">
+                <div class="container">
+                    <div class="facts-container flex-column">
+                        <div class="facts-header title-h2">
+                            Факты и цифры
+                        </div>
+                        <div class="fact-items">
+                            <div class="facts-item">
+                                <div class="number">
+                                    <span>22</span>
+
+                                    <p>
+                                        года
+                                    </p>
+                                </div>
+                                <div class="fact-header">
+                                    <span>Опыт</span>
+                                    <ul class="fact-list">
+                                        <li>на рынке с 1999 года</li>
+                                        <li>вертикально интегрированная компания</li>
+                                        <li>полный технологический цикл производства</li>
+                                        <li>собственная логистика</li>
+                                        <li>сертификация FSC</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="facts-item">
+                                <div class="number">
+                                    <span>630</span>
+                                    <p>
+                                        работников
+                                    </p>
+                                </div>
+                                <div class="fact-header">
+                                    <span>Команда</span>
+                                    <ul class="fact-list">
+                                        <li>более 100 квалифицированных специалистов</li>
+                                        <li>22 отдела</li>
+                                        <li>постоянный штат сотрудников</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="facts-item">
+                                <div class="number">
+                                    <span>120</span>
+                                    <p>
+                                        компаний
+                                    </p>
+                                </div>
+                                <div class="fact-header">
+                                    <span>Клиенты</span>
+                                    <ul class="fact-list">
+                                        <li>длительность сотрудничества более 10 лет</li>
+                                        <li>минимальные сроки выполнения заказов</li>
+                                        <li>оперативность ответа на новые запросы</li>
+                                        <li>личный менеджер для клиента</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="facts-item">
+                                <div class="number">
+                                    <span>2000</span>
+                                    <p>
+                                        размеров
+                                    </p>
+                                </div>
+                                <div class="fact-header">
+                                    <span>Продукция</span>
+                                    <ul class="fact-list">
+                                        <li>широкий диапазон видов товара</li>
+                                        <li>индивидуальные размеры</li>
+                                        <li>разработка упаковки и дизайна</li>
+                                        <li>широкий спектр применения</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="production grid-main">
+                <div class="container">
+                    <div class="production-container">
+                        <h2 class="title-h2">
+                            Продукция
+                        </h2>
+                        <div class="production__tab-control">
+                            <a href="#buyers-choice"
+                                class="production__tab-button js-tab active title-h3 animate-link --gray"><span>Гофроупаковка</span>
+                            </a>
+                            <a href="#product-discount"
+                                class="production__tab-button js-tab title-h3 animate-link --gray"><span>Ролевая
+                                    продукция</span> </a>
+                        </div>
+                        <div class="production__tab-content anim-items anim-no-scrollTop fadeIn">
+                            <div class="production__tab-item active js-tab-item" id="buyers-choice">
+                                <div class="tab">
+                                    <div class="tab-container">
+                                        <div class="production-item ">
+                                            <a href="#" class="item-image-link animate-link --black">
+                                                <h4 class="title-h4"><span>Кондитерские изделия</span></h4>
+                                            </a>
+                                            <div class="production-image">
+                                                <a href="#" class="item-image-link">
+                                                    <img src="./img/box1.png" alt="Кондитерские изделия"
+                                                        class="item-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="production-item ">
+                                            <a href="#" class="item-image-link">
+                                                <h4 class="title-h4 animate-link --black"><span>Канцелярские товары и
+                                                        бумажная
+                                                        продукция</span></h4>
+                                            </a>
+                                            <div class="production-image">
+                                                <a href="#" class="item-image-link">
+                                                    <img src="./img/box2.png"
+                                                        alt="Канцелярские товары и бумажная продукция"
+                                                        class="item-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="production-item ">
+                                            <a href="#" class="item-image-link">
+                                                <h4 class="title-h4 animate-link --black"><span>Косметика</span></h4>
+                                            </a>
+                                            <div class="production-image">
+                                                <a href="#" class="item-image-link">
+                                                    <img src="./img/box3.png" alt="Косметика" class="item-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="production-item ">
+                                            <a href="#" class="item-image-link">
+                                                <h4 class="title-h4 animate-link --black"><span>Мясная и молочная
+                                                        продукция</span>
+                                                </h4>
+                                            </a>
+                                            <div class="production-image">
+                                                <a href="#" class="item-image-link">
+                                                    <img src="./img/box4.png" alt="Мясная и молочная продукция"
+                                                        class="item-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="production-item ">
+                                            <a href="#" class="item-image-link">
+                                                <h4 class="title-h4 animate-link --black"><span>Интернет-торговля</span>
+                                                </h4>
+                                            </a>
+                                            <div class="production-image">
+                                                <a href="#" class="item-image-link">
+                                                    <img src="./img/box5.png" alt="Интернет-торговля"
+                                                        class="item-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="production-item ">
+                                            <a href="#" class="item-image-link">
+                                                <h4 class="title-h4 animate-link --black"><span>Любые другие
+                                                        товары</span></h4>
+                                            </a>
+                                            <div class="production-image">
+                                                <a href="#" class="item-image-link">
+                                                    <img src="./img/box6.png" alt="Любые другие товары"
+                                                        class="item-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="production__tab-item js-tab-item" id="product-discount">
+                                <div class="tab">
+                                    <div class="tab-container">
+                                        <div class="production-item">
+                                            <a href="#" class="item-image-link animate-link --black">
+                                                <h4 class="title-h4"><span>Картон для плоских слоев</span></h4>
+                                            </a>
+                                            <div class="production-image">
+                                                <a href="#" class="item-image-link">
+                                                    <img src="./img/box7.png" alt="Кондитерские изделия"
+                                                        class="item-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="production-item">
+                                            <a href="#" class="item-image-link animate-link --black">
+                                                <h4 class="title-h4"><span>Бумага для гофрирования</span></h4>
+                                            </a>
+                                            <div class="production-image">
+                                                <a href="#" class="item-image-link">
+                                                    <img src="./img/box8.png"
+                                                        alt="Канцелярские товары и бумажная продукция"
+                                                        class="item-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="partnership grid-main">
+                <div class="container">
+                    <div class="partnership-container">
+                        <div class="partnership-image">
+                            <h2 class="title-h2">Длительность сотрудничества</h2>
+                            <div class="partnership-diagram">
+                                <img src="./img/diagram.svg" alt="Длительность сотрудничества" class="image">
+                                <div class="diagram-text">
+                                    <div class="diagram-item">
+                                        <div class="color-circle"></div> от 5 до 10 лет
+                                    </div>
+                                    <div class="diagram-item">
+                                        <div class="color-circle"></div>от 3 до 5 лет
+                                    </div>
+                                    <div class="diagram-item">
+                                        <div class="color-circle"></div>от 1 до 3 лет
+                                    </div>
+                                    <div class="diagram-item">
+                                        <div class="color-circle"></div>Более 10 лет
+                                    </div>
+                                    <div class="diagram-item">
+                                        <div class="color-circle"></div>до 1 года
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="partnership-text">
+                            <div class="about-partnership">
+                                <p>Мы настроены на длительное сотрудничество, предлагаем заключение долгосрочных
+                                    контрактов на
+                                    взаимовыгодных условиях. </p>
+                                <p>Гарантируем бесперебойную доставку, составление ежемесячных графиков поставки и
+                                    возможность
+                                    отгрузки по датам, согласованным с покупателем. </p>
+                                <p>К вашим услугам личный менеджер, бесплатная курьерская доставка образцов и
+                                    документов.</p>
+                            </div>
+                            <div class="our-partners">
+                                <div>
+                                    <h2 class="title-h2">Наши партнеры и клиенты</h2>
+                                    <p class="grey-text">
+                                        Среди наших клиентов - крупнейшие производители всего потребительского рынка от
+                                        ликероводочной промышленности до бытовой техники, от широкого спектра продуктов
+                                        питания до
+                                        упаковочных материалов для парфюмерной промышленности.
+                                    </p>
+                                    <div class="span-text">
+                                        <span class="middle-purple-txt">
+                                            более
+                                        </span>
+                                        <span class="big-purple-txt">
+                                            200
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certification grid-main">
+                <div class="container">
+                    <div class="certification-container">
+                        <div class="sertificates">
+                            <h2 class="title-h2">
+                                Сертификация
+                            </h2>
+                            <div class="sertificate-list lightgallery">
+                                <div class="sertificate-item">
+                                    <div class="cut-img">
+                                        <a href="./img/certificate1.png" target="_blank" class="full-certificate-link">
+                                            <img src="./img/certificate1.png" alt="Сертификат" class="sertificate-img">
+                                        </a>
+                                    </div>
+                                    <div class="grey-round-square"></div>
+                                </div>
+                                <div class="sertificate-item">
+                                    <div class="cut-img">
+                                        <a href="./img/certificate1.png" target="_blank" class="full-certificate-link">
+                                            <img src="./img/certificate1.png" alt="Сертификат" class="sertificate-img">
+                                        </a>
+                                    </div>
+                                    <div class="grey-round-square"></div>
+                                </div>
+                                <div class="sertificate-item">
+                                    <div class="cut-img">
+                                        <a href="./img/certificate1.png" target="_blank" class="full-certificate-link">
+                                            <img src="./img/certificate1.png" alt="Сертификат" class="sertificate-img">
+                                        </a>
+                                    </div>
+                                    <div class="grey-round-square"></div>
+                                </div>
+                                <div class="sertificate-item">
+                                    <div class="cut-img">
+                                        <a href="./img/certificate1.png" target="_blank" class="full-certificate-link">
+                                            <img src="./img/certificate1.png" alt="Сертификат" class="sertificate-img">
+                                        </a>
+                                    </div>
+                                    <div class="grey-round-square"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="complaints-form">
+                            <div class="blue-container">
+                                <div class="padding-container">
+                                    <h2 class="title-h2">
+                                        Форма подачи жалоб <br> и предложений
+                                    </h2>
+                                    <div class="order-column">
+                                        <form action="#" class="order-form" data-clear="true">
+                                            <input type="hidden" name="mode" value="modal:send:service">
+                                            <div class="form-order-row">
+                                                <div class="form-order-column">
+                                                    <div class="form-order-wrap-input wrap-input">
+                                                        <input type="text" placeholder="Ваши ФИО" name="form[name]"
+                                                            data-required="true" class="input-data">
+                                                    </div>
+                                                    <div class="form-order-wrap-input wrap-input">
+                                                        <input type="tel" placeholder="Телефон" name="form[phone]"
+                                                            data-required="true" class="input-data" inputmode="text">
+                                                    </div>
+                                                    <div class="form-order-wrap-input wrap-input">
+                                                        <input type="email" placeholder="E-mail" name="form[email]"
+                                                            data-required="true" class="input-data">
+                                                    </div>
+                                                </div>
+                                                <div class="form-order-wrap-input wrap-input">
+                                                    <textarea name="form[comment]" placeholder="Описание жалобы"
+                                                        data-required="true" class="input-data"></textarea>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="form-order-group">
+                                        <label class="form-order-checkbox">
+                                            Согласен на обработку персональных данных в соответствии с <a href="#"
+                                                rel="nofollow">Политикой конфиденциальности</a>
+                                        </label>
+                                        <button type="submit" class="form-order-submit main-btn animButton"
+                                            data-content="Отправить">Отправить</button>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news grid-main">
+                <div class="container">
+                    <div class="news-container">
+                        <div class="news-group-title">
+                            <h2 class="title-h2">
+                                Наши новости
+                            </h2>
+
+                            <a href="#" class="all-news animate-link --gray">
+                                <span>Все новости</span>
+                            </a>
+                        </div>
+
+                        <div class="news-articles grid-4">
+                            <div class="articles-navigation">
+                                <div class="articles">
+                                    <div class="news-img-block">
+                                        <div class="image">
+                                            <img src="./img/news-img-block.png" alt="Гофроновости и статьи">
+                                        </div>
+                                    </div>
+                                    <h3 class="title-h3">
+                                        Гофроновости<br> и статьи
+                                    </h3>
+                                    <ul class="articles-list">
+                                        <li><a href="#" class="article-link animate-link --gray"><span>ГОСТы,
+                                                    FEFCO</span></a></li>
+                                        <li><a href="#" class="article-link animate-link --gray"><span>Словарь
+                                                    терминов</span></a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="article-link animate-link --gray"><span>Вопросы-Ответы</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-navigation">
+
+                                <div class="latest-news grid-4">
+                                    <a href="#" class="news-item">
+                                        <img src="./img/news-1.png" alt="Отраслевые выставки" class="news-img">
+                                        <div class="news-item-group">
+                                            <div class="news-title">
+                                                <h4 class="title-h4">
+                                                    <div class="news-link"><span>Отраслевые выставки</span></div>
+                                                </h4>
+                                                <div class="news-description">
+                                                    С 25 по 28 августа 2020 года в МВЦ «Крокус Экспо»
+                                                    состоится 25-я международная выставка упаковочной индустрии -
+                                                    Росупак-2020.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-item">
+                                        <img src="./img/news-2.png" alt="Итоги выставки «Росупак-2011»"
+                                            class="news-img">
+                                        <div class="news-item-group">
+                                            <div class="news-title">
+                                                <h4 class="title-h4">
+                                                    <div class="news-link"><span>Итоги выставки
+                                                            <br>«Росупак-2011»</span></div>
+                                                </h4>
+                                                <div class="news-description">
+                                                    С 25 по 28 августа 2020 года в МВЦ «Крокус Экспо»
+                                                    состоится 25-я международная выставка упаковочной индустрии -
+                                                    Росупак-2020.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-item">
+                                        <img src="./img/news-3.png" alt="Рекомендации по штабелированию"
+                                            class="news-img">
+
+                                        <div class="news-item-group">
+                                            <div class="news-title">
+                                                <h4 class="title-h4">
+                                                    <div class="news-link"><span>Рекомендации по штабелированию</span>
+                                                    </div>
+                                                </h4>
+                                                <div class="news-description">
+                                                    С 25 по 28 августа 2020 года в МВЦ «Крокус Экспо».
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-item">
+                                        <img src="./img/news-4.png" alt="Драйверов для промышленного роста нет"
+                                            class="news-img">
+                                        <div class="news-item-group">
+                                            <div class="news-title">
+                                                <h4 class="title-h4">
+                                                    <div class="news-link">
+                                                        <span>
+                                                            Запахло кризисом.<br> Драйверов для промышленного
+                                                            роста нет.
+                                                        </span>
+                                                    </div>
+                                                </h4>
+                                                <div class="news-description">
+                                                    С 25 по 28 августа 2020 года в МВЦ «Крокус Экспо»
+                                                    состоится 25-я международная выставка упаковочной индустрии -
+                                                    Росупак-2020.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seo-text grid-main ">
+                <div class="container">
+                    <div class="seo-container">
+                        <h1 class="title-h1">Заголовок H1 для SEO</h1>
+                        <div class="grey-text">
+                            <p>Компания <strong>«ГеоПак»</strong> выпускает гофроупаковку с 1999 года. Собственное
+                                производство
+                                гофрокартона располагается в 37км от Москвы по Ярославскому шоссе - городе
+                                Красноармейск.
+                            </p>
+                            <p>Основные производственные мощности предприятия изначально обеспечили изготовление
+                                <strong>полного</strong>
+                                технологического цикла <strong>производства гофротары</strong> от выпуска
+                                <strong>гофрокартона</strong> до
+                                широкого ассортимента <strong>гофрокоробов</strong> и других изделий.
+                            </p>
+                            <p>Основные наши клиенты - это крупные производственные предприятия- производители товаров
+                                народного
+                                потребления. И поэтому мы обращаем внимание на удобство работы и быстроту обслуживания
+                                заказов, гарантии
+                                качества и стабильность поставок.
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+            <div class="bg-overlay"></div>
+        </main>
+
+        <!-- // MAIN -->
+
+        <!-- FOOTER -->
+
+        <footer class="footer grid-footer">
+            <div class="container">
+                <div class="footer-1">
+                    <div class="footer-logo">
+                        <img src="./img/logo-footer.svg" alt="ГеоПак">
+                    </div>
+                    <div class="footer-tel">
+                        <span class="grey-text hot-line fs-12">
+                            Горячая линия
+                        </span>
+                        <a href="tel:+74992132016" class="tel animate-link"><span>+7 (499) 213-20-16</span></a>
+                    </div>
+                    <a href="mailto:geopack@geopack.ru" class="email animate-link --back"><span>
+                            geopack@geopack.ru</span></a>
+                    <div class="footer-lacation">
+                        <span class="grey-text fs-12">
+                            Московский офис
+                        </span>
+                        <span class="black-text">
+                            Москва, ул. Добролюбова, д. 3, стр. 1
+                        </span>
+                        <a href="#" class="link animate-link --back"><span>мы на карте</span></a>
+                    </div>
+                    <button class="btn callback animButton --blue" data-content="Заказать звонок">Заказать
+                        звонок</button>
+                </div>
+                <div class="footer-2">
+                    <div class="production-location">
+                        <div class="production-footer grey-text fs-12">
+                            Производство:
+                        </div>
+                        <div class="location">
+                            г.Красноармейск, Муромское шоссе д.1 стр.3. <br>
+                            г.Кондрово, ул. Циолковского д.5В
+                        </div>
+                    </div>
+                    <div class="development-wesma">
+                        <div class="development grey-text">
+                            Разработка сайта
+                        </div>
+                        <div class="wesma gray-text">
+                            <a href="#"><img src="./img/wesma.svg" alt="Wesma" class="wesma-logo"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- // FOOTER -->
+
+        <div class="popup-general modal" id="popup-tender">
+
+            <div class="popup-general__body"
+                style="background: url('./img/image-modal-bg-1.png') 100% 100% / cover, #484d97;">
+
+                <div class="popup-general__close js-modal-close"></div>
+
+                <div class="popup-general__group-title">
+                    <div class="popup-general__title">Пригласить на тендер</div>
+                </div>
+
+                <div class="popup-general__wrap">
+                    <div class="form-popup-general__lsit">
+                        <from action="#" class="popup-general__form form-popup-general">
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Ваше имя">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="tel" placeholder="Ваш телефон">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Ваш e-mail">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <select name="">
+                                    <option value="Выберите точку самовывоза">Закупки</option>
+
+                                    <option value="Выберите точку самовывоза">Закупки 1</option>
+
+                                    <option value="Выберите точку самовывоза">Закупки 1</option>
+
+                                    <option value="Выберите точку самовывоза">Закупки 1</option>
+                                </select>
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <textarea placeholder="Ваше сообщение"></textarea>
+                            </div>
+                    </div>
+
+                    <div class="popup-general__error">Заполните все обязательные поля</div>
+                    <div class="popup-general__error">Неверный логин или пароль.</div>
+
+                    <div class="form-popup-general__wrap-button">
+                        <button type="submit" class="form-popup-general__submit animButton"
+                            data-content="Отправить"><span>Отправить</span></button>
+                    </div>
+
+                    <div class="form-popup-general__subtext">
+                        Согласен на обработку персональных данных в соответствии с <a href="#">Политикой
+                            конфиденциальности</a>
+                        </from>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="popup-general modal" id="popup-commercial-proposal">
+
+            <div class="popup-general__body"
+                style="background: url('./img/image-modal-bg-2.png') 100% 100% / cover, #484d97;">
+
+                <div class="popup-general__close js-modal-close"></div>
+
+                <div class="popup-general__group-title">
+                    <div class="popup-general__title">запросить коммерческое предложение</div>
+                </div>
+
+                <div class="popup-general__wrap">
+                    <div class="form-popup-general__lsit">
+                        <from action="#" class="popup-general__form form-popup-general">
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Ваше имя">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="tel" placeholder="Ваш телефон">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Ваш e-mail">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Ваша компания">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Размер, марка, количество">
+                            </div>
+                    </div>
+
+                    <div class="form-popup-general__wrap-button">
+                        <button type="submit" class="form-popup-general__submit animButton"
+                            data-content="Отправить">Отправить</button>
+                    </div>
+
+                    <div class="form-popup-general__subtext">
+                        Согласен на обработку персональных данных в соответствии с <a href="#">Политикой
+                            конфиденциальности</a>
+                        </from>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="popup-general modal" id="popup-order">
+
+            <div class="popup-general__body"
+                style="background: url('./img/image-modal-bg-3.png') 100% 100% / cover, #484d97;">
+
+                <div class="popup-general__close js-modal-close"></div>
+
+                <div class="popup-general__group-title">
+                    <div class="popup-general__title">Оставить заявку</div>
+                </div>
+
+                <div class="popup-general__wrap">
+                    <div class="form-popup-general__lsit">
+                        <from action="#" class="popup-general__form form-popup-general">
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Ваше имя">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="tel" placeholder="Ваш телефон">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Ваш e-mail">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Ваша компания">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <textarea placeholder="Ваше сообщение"></textarea>
+                            </div>
+                    </div>
+
+                    <div class="form-popup-general__wrap-button">
+                        <button type="submit" class="form-popup-general__submit animButton"
+                            data-content="Отправить">Отправить</button>
+                    </div>
+
+                    <div class="form-popup-general__subtext">
+                        Согласен на обработку персональных данных в соответствии с <a href="#">Политикой
+                            конфиденциальности</a>
+                        </from>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="popup-general modal" id="popup-respond">
+
+            <div class="popup-general__body"
+                style="background: url('./img/image-modal-bg-4.png') 100% 100% / cover, #484d97;">
+
+                <div class="popup-general__close js-modal-close"></div>
+
+                <div class="popup-general__group-title">
+                    <div class="popup-general__title">Откликнуться</div>
+                </div>
+
+                <div class="popup-general__wrap">
+                    <div class="form-popup-general__lsit">
+                        <from action="#" class="popup-general__form form-popup-general">
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Ваше имя">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="tel" placeholder="Ваш телефон">
+                            </div>
+
+                            <div class="form-popup-general__wrap-input wrap-input-modal">
+                                <input type="text" placeholder="Ваш e-mail">
+                            </div>
+                    </div>
+
+                    <div class="form-popup-general__wrap-button">
+                        <button type="submit" class="form-popup-general__submit animButton"
+                            data-content="Отправить">Отправить</button>
+                    </div>
+
+                    <div class="form-popup-general__subtext">
+                        Согласен на обработку персональных данных в соответствии с <a href="#">Политикой
+                            конфиденциальности</a>
+                        </from>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="popup-overlay"></div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/lightgallery-all.min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="./js/jquery.inputmask.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.nice-select.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

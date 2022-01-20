@@ -1,0 +1,173 @@
+.facts-numbers {
+	padding: 0 0 100px 0;
+
+	& .facts-container {
+		background: #484d97;
+		border-radius: 50px;
+		& .number {
+			padding-right: 20px;
+			& span {
+				display: block;
+				margin-bottom: 12px;
+				font-size: 40px;
+				line-height: 120%;
+				font-weight: 800;
+				font-feature-settings: "tnum" on, "lnum" on;
+			}
+			& > p {
+				margin-bottom: 0;
+				font-size: 12px;
+				line-height: 120%;
+				color: rgba(255, 255, 255, 0.5);
+				font-weight: 400;
+				text-align: center;
+			}
+		}
+		& .fact-header {
+			padding-top: 11px;
+
+			& span {
+				font-size: 22px;
+				line-height: 120%;
+				font-weight: 600;
+			}
+
+			& ul {
+				padding-top: 21px;
+				max-width: 136px;
+			}
+			& li {
+				font-size: 12px;
+				line-height: 140%;
+				color: #fff;
+				font-weight: 400;
+				position: relative;
+				padding-left: 22px;
+				margin-bottom: 17px;
+				&:before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 12px;
+					height: 12px;
+					content: url("../img/checkmark-outline.svg");
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.facts-container {
+	padding: 50px 55px 55px 55px;
+	& .facts-header {
+		margin-bottom: 40px;
+	}
+
+	& .fact-items {
+		display: grid;
+		grid-template-columns: minmax(auto, 213px) minmax(auto, 267px) minmax(auto, 232px) minmax(auto, 267px);
+		grid-gap: 30px;
+		& .facts-item {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+
+			&:nth-child(1) {
+				& .fact-header .fact-list {
+					& li {
+						margin-bottom: 13px;
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1500px) {
+	.facts-container {
+		& .fact-items {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.facts-numbers .facts-container .fact-header ul {
+		max-width: initial;
+	}
+}
+
+@media (max-width: 1170px) {
+	.facts-numbers .facts-container .number span {
+		@include adaptiv-font(40, 18);
+	}
+
+	.facts-numbers .facts-container .fact-header span {
+		@include adaptiv-font(22, 16);
+	}
+}
+
+@media (max-width: 900px) {
+	.facts-numbers {
+		padding: 0 0 40px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.facts-numbers {
+		padding: 0 0 20px 0;
+	}
+
+	.facts-container {
+		padding: 15px;
+	}
+
+	.facts-numbers .facts-container {
+		border-radius: 25px;
+	}
+
+	.facts-container .facts-header {
+		margin-bottom: 20px;
+	}
+
+	.facts-container .fact-items .facts-item {
+		flex-direction: column;
+	}
+
+	.facts-numbers .facts-container .number {
+		padding-bottom: 0;
+
+		& > p {
+			text-align: left;
+		}
+	}
+
+	.facts-numbers .facts-container .number span {
+		margin-bottom: 5px;
+	}
+
+	.facts-numbers .facts-container .fact-header ul {
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 500px) {
+	.facts-numbers .facts-container .number {
+		font-size: 28px;
+	}
+
+	.facts-numbers .facts-container .fact-header {
+		font-size: 18px;
+	}
+
+	.facts-container .fact-items {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 15px;
+	}
+}

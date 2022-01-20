@@ -1,0 +1,38 @@
+.page-news {
+}
+
+.page-news-wrap {
+	padding: 20px 0 20px 0;
+}
+
+.page-news-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	margin-bottom: 40px;
+}
+
+.page-news-item {
+}
+
+@media (max-width: 900px) {
+	.page-news-list {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-news-wrap {
+		padding: 10px 0 10px 0;
+	}
+
+	.page-news-list {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 600px) {
+	.page-news-list {
+		grid-template-columns: 1fr;
+	}
+}
